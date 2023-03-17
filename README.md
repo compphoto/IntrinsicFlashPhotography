@@ -1,5 +1,5 @@
 # Computational Flash Photography through Intrinsics
-![teaser](./figures/teaser.png)
+![teaser](./figures/teaser_transparent.png)
 
 ## Setup
 We provide training implementation of our method for both the generation and decomposition of flash through intrinsics.
