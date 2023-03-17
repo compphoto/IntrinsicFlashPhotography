@@ -2,11 +2,12 @@
 ![teaser](./figures/teaser.png)
 
 ## Setup
-We provide the implementation of our method for both the generation and decomposition of flash through intrinsics.
+We provide training implementation of our method for both the generation and decomposition of flash through intrinsics.
+
 ### Environments
 Our model can be trained using python 3.9 or higher versions.
 
-Download our models weights from [here](https://vault.sfu.ca/index.php/s/sRWFTyRkirFEw6B) and put it in the checkpoints.
+Download our models weights from [here](https://vault.sfu.ca/index.php/s/sRWFTyRkirFEw6B) and put it in a directory called checkpoints.
 
 Install the following dependencies:
 ```sh
@@ -47,8 +48,16 @@ python test.py --dataroot DATASETDIR --name flashGeneration --model intrinsic_fl
 
 ## Citation
 This implementation is provided for academic use only. 
+```
+@INPROCEEDINGS{maralan2023flash,
+  author={Sepideh Sarajian Maralan, Chris Careaga  and Ya\u{g}{\i}z Aksoy},
+  title={Computational Flash Photography through Intrinsics},
+  journal={Proc. CVPR},
+  year={2023}
+}
+```
 
-Please cite our paper if you use this code or any of the models.
+Please cite our paper if you use this code, dataset or any of the models.
 ## Credits
 The training skeleton is adaptod from the [pytorch-CycleGAN-and-pix2pix][4] repository.
 
