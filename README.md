@@ -1,6 +1,12 @@
 # Computational Flash Photography through Intrinsics
 ![teaser](./figures/teaser_transparent.png)
 
+We develop a system to computationally control the flash light in photographs originally taken with or without flash. We formulate the flash photograph formation through image intrinsics, and estimate the flash shading through generation for no-flash photographs (top) or decomposition where we separate the flash from the ambient illumination for flash photographs (bottom).
+
+Project web page: http://yaksoy.github.io/intrinsicFlash
+
+Extended Flash and Ambient Illuminations Dataset repo: https://github.com/compphoto/IntrinsicFlashDataset
+
 ## Setup
 We provide training implementation of our method for both the generation and decomposition of flash through intrinsics.
 
@@ -50,7 +56,7 @@ python test.py --dataroot DATASETDIR --name flashGeneration --model intrinsic_fl
 This implementation is provided for academic use only. 
 ```
 @INPROCEEDINGS{maralan2023flash,
-  author={Sepideh Sarajian Maralan, Chris Careaga  and Ya\u{g}{\i}z Aksoy},
+  author={Sepideh Sarajian Maralan and Chris Careaga and Ya\u{g}{\i}z Aksoy},
   title={Computational Flash Photography through Intrinsics},
   journal={Proc. CVPR},
   year={2023}
@@ -59,9 +65,9 @@ This implementation is provided for academic use only.
 
 Please cite our paper if you use this code, dataset or any of the models.
 ## Credits
-The training skeleton is adaptod from the [pytorch-CycleGAN-and-pix2pix][4] repository.
+The training skeleton is adapted from the [pytorch-CycleGAN-and-pix2pix][4] repository.
 
-The network architecture is adopted from the [MiDaS][1] repository.
+The network architecture is adapted from the [MiDaS][1] repository.
 
 [1]: https://github.com/intel-isl/MiDaS/tree/v2
 [4]: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
